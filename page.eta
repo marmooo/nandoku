@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="<%= it.gradeName %>までの漢字で構成される難読漢字の一覧です。">
+    <title><%= it.gradeName %> | 難読漢字 (<%= it.num %>)</title>
+    <meta property="og:title" content="<%= it.gradeName %> | 難読漢字 (<%= it.num %>)">
+    <meta property="og:site_name" content="難読漢字 (<%= it.num %>)">
+    <meta property="og:description" content="<%= it.gradeName %>までの漢字で構成される難読漢字の一覧です。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marmooo.github.io/nandoku/">
+    <meta property="og:image" content="https://marmooo.github.io/nandoku/favicon/apple-touch-icon.png">
+    <meta name="twitter:card" content="summary">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F2179JXDYY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-F2179JXDYY');
+    </script>
+    <link rel="icon" type="image/png" href="/nandoku/favicon/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="/nandoku/favicon/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/nandoku/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/nandoku/favicon/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      html[data-bs-theme="dark"] .favicon { filter: invert(1) hue-rotate(180deg); }
+    </style>
+    <script data-ad-client="ca-pub-6459713332128733" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand navbar-light">
+        <div class="container flex-wrap">
+          <a class="navbar-brand" href="/nandoku/">
+            <img class="favicon" alt="" src="/nandoku/favicon/favicon.svg" width="32" height="32">
+            難読漢字 <small>(<%= it.num %>)</small>
+          </a>
+          <div class="navbar-nav">
+            <select id="gradeOption" class="form-select form-select-sm" aria-label="学年">
+              <option <%= it.selected(it.grade, "1") %>>小1</option>
+              <option <%= it.selected(it.grade, "2") %>>小2</option>
+              <option <%= it.selected(it.grade, "3") %>>小3</option>
+              <option <%= it.selected(it.grade, "4") %>>小4</option>
+              <option <%= it.selected(it.grade, "5") %>>小5</option>
+              <option <%= it.selected(it.grade, "6") %>>小6</option>
+              <option <%= it.selected(it.grade, "7") %>>中1/2</option>
+              <option <%= it.selected(it.grade, "8") %>>中3</option>
+              <option <%= it.selected(it.grade, "9") %>>高校</option>
+              <option <%= it.selected(it.grade, "10") %>>常用</option>
+              <option <%= it.selected(it.grade, "11") %>>準1級</option>
+              <option <%= it.selected(it.grade, "12") %>>1級</option>
+              <option <%= it.selected(it.grade, "13") %>>表外</option>
+            </select>
+            <button title="ダークモード切替" id="toggleDarkMode" class="fs-4 btn p-0 ms-1" type="button">🌓</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <noscript>
+        <div class="alert alert-warning">JavaScript を ON にしてください</div>
+      </noscript>
+      <div>
+        <p><%= it.gradeName %>までの漢字で構成される難読漢字の一覧です。</p>
+      </div>
+      <div class="notranslate">
+        <%~ it.content %>
+      </div>
+    </main>
+    <footer class="pt-4 alert text-center">
+      <div>
+        <a class="px-1" href="/">Home</a>
+        <a class="px-1" href="/terms/">Terms</a>
+        <a class="px-1" href="https://github.com/marmooo/nandoku">Contact</a>
+      </div>
+      <div class="text-muted">&copy; <a href="https://github.com/marmooo">marmooo</a></div>
+    </footer>
+    <script src="/nandoku/index.js"></script>
+  </body>
+</html>

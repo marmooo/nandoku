@@ -1,0 +1,20 @@
+{
+  "name": "難読漢字",
+  "short_name": "難読漢字",
+  "icons": [
+    {
+      "src": "/nandoku/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/nandoku/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "start_url": "https://marmooo.github.io/nandoku/",
+  "display": "standalone"
+}
