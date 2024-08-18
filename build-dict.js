@@ -1,6 +1,6 @@
 import { TextLineStream } from "jsr:@std/streams/text-line-stream";
 import { JKAT, Kanji } from "npm:@marmooo/kanji@0.0.8";
-import { YomiDict } from "https://raw.githubusercontent.com/marmooo/yomi-dict/v0.1.7/mod.js";
+import { YomiDict } from "npm:yomi-dict@0.1.8";
 import { Onkun } from "https://raw.githubusercontent.com/marmooo/onkun/v0.2.6/mod.js";
 
 async function loadInappropriateWordsJa() {
@@ -303,7 +303,7 @@ function splitByGrade(arr) {
 
 const outDir = "dist";
 const yomiDict = await YomiDict.fetch(
-  "https://raw.githubusercontent.com/marmooo/yomi-dict/v0.1.7/yomi.csv",
+  "https://raw.githubusercontent.com/marmooo/yomi-dict/v0.1.8/yomi.csv",
 );
 const onkunDict = new Onkun();
 await onkunDict.fetchJoyo(
