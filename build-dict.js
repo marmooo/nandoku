@@ -306,7 +306,7 @@ const yomiDict = await YomiDict.load("yomi-dict/yomi.csv");
 const onkunDict = new Onkun();
 await onkunDict.loadJoyo("onkun/data/joyo-2017.csv");
 await onkunDict.load("Joyo", "onkun/data/joyo-2010.csv");
-await onkunDict.load("Unihan", "onkun/data/Unihan-2023-07-15.csv");
+await onkunDict.load("Unihan", "onkun/data/Unihan-2024-07-31.csv");
 toHiragana(onkunDict);
 addDakuon(onkunDict);
 addHandakuon(onkunDict);
