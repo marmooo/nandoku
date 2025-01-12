@@ -1,4 +1,4 @@
-import { Eta } from "npm:eta@3.4.0";
+import { Eta } from "npm:eta@3.5.0";
 
 const fileNames = [
   "1",
