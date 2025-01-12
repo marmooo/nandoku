@@ -1,7 +1,7 @@
 import { TextLineStream } from "jsr:@std/streams/text-line-stream";
 import { JKAT, Kanji } from "npm:@marmooo/kanji@0.0.8";
 import { YomiDict } from "npm:yomi-dict@0.1.8";
-import { Onkun } from "npm:onkun@0.2.8";
+import { Onkun } from "npm:onkun@0.3.0";
 
 async function loadInappropriateWordsJa() {
   const dict = {};
