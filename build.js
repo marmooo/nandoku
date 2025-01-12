@@ -1,4 +1,4 @@
-import { Eta } from "https://deno.land/x/eta@v3.4.0/src/index.ts";
+import { Eta } from "npm:eta@3.4.0";
 
 const fileNames = [
   "1",
