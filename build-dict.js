@@ -1,7 +1,7 @@
-import { TextLineStream } from "jsr:@std/streams/text-line-stream";
-import { JKAT, Kanji } from "npm:@marmooo/kanji@0.1.1";
-import { YomiDict } from "npm:yomi-dict@0.2.2";
-import { Onkun } from "npm:onkun@0.3.0";
+import { TextLineStream } from "@std/streams";
+import { JKAT, Kanji } from "@marmooo/kanji";
+import { YomiDict } from "yomi-dict";
+import { Onkun } from "onkun";
 
 async function loadInappropriateWordsJa() {
   const dict = {};
@@ -306,7 +306,7 @@ const yomiDict = await YomiDict.load("yomi-dict/yomi.csv");
 const onkunDict = new Onkun();
 await onkunDict.loadJoyo("onkun/data/joyo-2017.csv");
 await onkunDict.load("Joyo", "onkun/data/joyo-2010.csv");
-await onkunDict.load("Unihan", "onkun/data/Unihan-2024-07-31.csv");
+await onkunDict.load("Unihan", "onkun/data/Unihan-2025-07-24.csv");
 toHiragana(onkunDict);
 addDakuon(onkunDict);
 addHandakuon(onkunDict);
