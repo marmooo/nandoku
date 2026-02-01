@@ -2,7 +2,7 @@
   "imports": {
     "@marmooo/kanji": "npm:@marmooo/kanji@^0.1.2",
     "@std/streams": "jsr:@std/streams@^1.0.17",
-    "eta": "npm:eta@^4.4.1",
+    "eta": "npm:eta@^4.5.0",
     "onkun": "npm:onkun@^0.3.2",
     "yomi-dict": "npm:yomi-dict@^0.2.2"
   }
